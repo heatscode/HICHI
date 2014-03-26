@@ -87,7 +87,8 @@ body {
 
 
 
-.project {
+
+.person, .project {
 	width: 280px;
 	height: 136px;
 }
@@ -102,7 +103,12 @@ body {
 	display: none;
 }
 
-.project, .about {
+.person, .project, .about {
+	/*border: 5px solid #ffffff;
+	border-radius: 3px;*/
+
+
+
 	background-color: #ffffff;
 	padding: 10px;
 	-moz-box-shadow:    0px 0px 5px 1px rgba(0, 0, 0, 0.1);
