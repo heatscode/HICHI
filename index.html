@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="css/navigataur.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8ALzLc/y8y3P////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ALzLc/y8y3P8vMtz/LzLc/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAvMtz/LzLc/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8Alpftgf///wD///8ALzLc/y8y3P////8A////AJaX7YH///8A////AP///wD///8A////AP///wD///8ALzLc/y8y3P////8A////AC8y3P8vMtz/////AP///wAvMtz/LzLc/////wD///8A////AP///wD///8ALzLc/y8y3P+Wl+2B////AP///wD///8A////AP///wD///8AlpftgS8y3P8vMtz/////AP///wD///8ALzLc/y8y3P8vMtz/////AP///wD///8A////AP///wD///8A////AP///wAvMtz/LzLc/y8y3P////8ALzLc/y8y3P8vMtz/LzLc/////wD///8ALzLc/////wD///8ALzLc/////wD///8ALzLc/y8y3P8vMtz/LzLc/y8y3P8vMtz/LzLc/y8y3P////8A////AC8y3P////8A////AC8y3P////8A////AC8y3P8vMtz/LzLc/y8y3P////8ALzLc/y8y3P////8A////AJaX7YEvMtz/////AP///wAvMtz/lpftgf///wD///8ALzLc/y8y3P////8A////AP///wAvMtz/////AP///wAvMtz/LzLc/////wD///8ALzLc/y8y3P////8A////AC8y3P////8A////AP///wD///8A////AP///wD///8ALzLc/y8y3P////8A////AC8y3P8vMtz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AC8y3P8vMtz/////AP///wAvMtz/LzLc/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wAvMtz/LzLc/y8y3P8vMtz/LzLc/y8y3P////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AC8y3P8vMtz/LzLc/y8y3P////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ALzLc/y8y3P////8A////AP///wD///8A////AP///wD///8A/n8AAPw/AAD+fwAA9m8AAOZnAADH4wAAj/EAAA2wAAANsAAAmZkAANmbAAD5nwAA+Z8AAPgfAAD8PwAA/n8AAA==" rel="icon" type="image/x-icon" />
+	<script>
+		function printAddress(n, d, e, inner) {
+			var addr = n + "@" + d + "." + e;
+			document.write("<a href=\"" + "mail" + "to:" + addr + "\" title=\"" + addr + "\">" + inner + "</a>");
+		}
+	</script>
 </head>
 <body>
 	<div class="header">
@@ -38,13 +44,114 @@
 			</p>
 		</div>
 
+		<!-- PEOPLE -->
+
 		<div class="item person expandable">
 			<div id="expand">xx yyy</div>
-			<h2 class="title">Scott Robertson</h3>
+			<img id="pic" src="img/scott-robertson.png">
+			<h3 class="title">Scott<br>Robertson</h3>
+			<p class="desc">Director</p>
+			<p class="desc">
+				<a href="http://www2.hawaii.edu/~scottpr/"><img src="img/website.svg" width="28"></a>
+				<script>printAddress('scott.robertson', 'hawaii', 'edu', '<img src="img/email.svg" width="28">');</script>
+			</p>
 			<div id="content">
-				<p class="desc">Scott is an Associate Professor in the Information and Computer Sciences Department at the University of Hawaii. He has a Ph.D. in Cognitive Psychology (Cognitive Science specialization) from Yale University. His research interests include Digital government, e-Democracy and e-Participation, social computing, and natural language processing.</p>
+				<br>
+				<p>Scott is an Associate Professor in the Information and Computer Sciences Department at the University of Hawaii. He has a Ph.D. in Cognitive Psychology (Cognitive Science specialization) from Yale University. His research interests include Digital government, e-Democracy and e-Participation, social computing, and natural language processing.</p>
 			</div>
 		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/bryan-semaan.png">
+			<h3 class="title">Bryan<br>Semaan</h3>
+			<p class="desc">Post-Doc</p>
+			<div id="content">
+				<p class="desc"></p>
+			</div>
+		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/sara-douglas.png">
+			<h3 class="title">Sara<br>Douglas</h3>
+			<p class="desc">Ph.D. Candidate</p>
+			<p class="desc">
+				<a href="http://www2.hawaii.edu/~sarad/"><img src="img/website.svg" width="28"></a>
+			</p>
+			<div id="content">
+				<br>
+				<p>Sara is a Ph.D. student in the <a href="http://www.hawaii.edu/cis/">Communication and Information Sciences program</a>. Sara has a B.S. in Computer Science with a minor in Mathematics from <a href="http://www.sonoma.edu/">Sonoma State University</a> and an M.S. in Human Factors and Information Design from <a href="http://www.bentley.edu/">Bentley University</a>. She has several years of work experience as a usability professional.</p>
+			</div>
+		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/misa-maruyama.png">
+			<h3 class="title">Misa<br>Maruyama</h3>
+			<p class="desc">Ph.D. Candidate</p>
+			<p class="desc">
+				<a href="http://www2.hawaii.edu/~misattm/"><img src="img/website.svg" width="28"></a>
+			</p>
+			<div id="content">
+				<br>
+				<p>Misa is a Ph.D. student in the <a href="http://www.hawaii.edu/cis/">Communication and Information Sciences program</a>. Misa has an M.S. in Broadcast Journalism from the <a href="http://www.medill.northwestern.edu/">Medill School of Journalism</a> at Northwestern University. She has been a reporter at KOB-TV and KRCR-TV. She is interested in new media and journalism.</p>
+			</div>
+		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/no-pic.png">
+			<h3 class="title">Vivian<br>Lik-Wai Cheng</h3>
+			<p class="desc">Alumnus</p>
+			<div id="content">
+				<p class="desc"></p>
+			</div>
+		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/no-pic.png">
+			<h3 class="title">Laura<br>Jolly</h3>
+			<p class="desc">Alumnus</p>
+			<div id="content">
+				<p class="desc"></p>
+			</div>
+		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/no-pic.png">
+			<h3 class="title">Lisa<br>Miller</h3>
+			<p class="desc">Alumnus</p>
+			<div id="content">
+				<p class="desc"></p>
+			</div>
+		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/no-pic.png">
+			<h3 class="title">Ravi<br>Vatrapu</h3>
+			<p class="desc">Alumnus</p>
+			<div id="content">
+				<p class="desc"></p>
+			</div>
+		</div>
+
+		<div class="item person expandable">
+			<div id="expand">xx yyy</div>
+			<img id="pic" src="img/no-pic.png">
+			<h3 class="title">Shaoxuan<br>Zhang</h3>
+			<p class="desc">Alumnus</p>
+			<div id="content">
+				<p class="desc"></p>
+			</div>
+		</div>
+
+
+
+		<!-- PUBLICATIONS are dynamically injected from publications.js by JavaScript -->
 		
 
 <!--
@@ -150,6 +257,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/publications.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
