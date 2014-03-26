@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #f3f2f4;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/** NAV **/
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 140px;
+	z-index: 100;
+	background-color: #0082ad;
+	padding: 20px;
+}
+
+#icon, #logo {
+	position: relative;
+	float: left;
+}
+
+@media(min-width: 601px) {
+	#icon {
+		display: none;
+	}
+}
+
+@media(max-width: 600px) {
+	#logo {
+		display: none;
+	}
+}
+
+#icon, #logo {
+	margin-right: 20px;
+}
+
+
+
+
+
+
+/** ISOTOPE **/
+
+.isotope {
+	margin: 8px;
+	margin-top: 148px;
+}
+
+.isotope:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/** ITEMS **/
+
+/* Default sizing is .social */
+.item {
+	position: relative;
+	float: left;
+	width: 64px;
+	height: 64px;
+	margin: 4px;
+}
+
+.item > * {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.project {
+	width: 280px;
+	height: 136px;
+}
+
+.x   { width:  136px; }
+.y   { height: 136px; }
+.xx  { width:  280px; }
+.yy  { height: 280px; }
+.yyy { height: 424px; }
+
+.expandable #expand, .expandable #content {
+	display: none;
+}
+
+.project, .about {
+	background-color: #ffffff;
+	padding: 10px;
+	-moz-box-shadow:    0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+	box-shadow:         0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+p.desc {
+	margin-top: 8px;
+}
+
+.project:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 32px solid transparent;
+	border-left: 32px solid transparent;
+	border-right: 32px solid #222222;
+	pointer-events: none;
+}
+
+
+/** LANGUAGES **/
+
+.unrealscript:after { border-right-color: #a54c4d; }
+.javascript:after   { border-right-color: #f15501; }
+.python:after       { border-right-color: #3581ba; }
+.java:after         { border-right-color: #b07219; }
