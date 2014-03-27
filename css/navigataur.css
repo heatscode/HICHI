@@ -59,15 +59,15 @@ body { -webkit-animation: bugfix infinite 1s; }
 }
 
 .menu > li > a:hover, .menu > li > a:focus{
-	background: #F2F2F2;
-	box-shadow: inset 0px 5px #51C1F1;
-	color: #51C1F1;
+	background: #f3f2f4;
+	box-shadow: inset 0px 5px #ffaf32;
+	color: #ffaf32;
 	padding: 47px 20px 34px;
 }
 
 .menu > li > a.active {
-	background: #F2F2F2;
-	color: #51C1F1;
+	background: #f3f2f4;
+	color: #ffaf32;
 	padding: 42px 20px 34px;
 }
 
@@ -91,13 +91,13 @@ body { -webkit-animation: bugfix infinite 1s; }
 	}
 	
 	.menu > li > a:hover, .menu > li > a:focus {
-		background: #f2f2f2;
-		box-shadow: inset 5px 0px #51c1f1;
+		background: #f3f2f4;
+		box-shadow: inset 5px 0px #ffaf32;
 		padding: 15px 15px 15px 20px;
 	}
 
 	.menu > li > a.active {
-		background: #f2f2f2;
+		background: #f3f2f4;
 		padding: 15px 15px 15px 20px;
 	}
 	
@@ -109,13 +109,14 @@ body { -webkit-animation: bugfix infinite 1s; }
 		margin-bottom: 20px;
 
 		
-		padding: 42px 20px;
-		background: #51c1f1;
+		padding: 33px 20px;
+		background: #ffc819;
 		-webkit-border-radius: 2px;
 		border-radius: 2px;
 		text-align: center;
+		font-size: 24px;
 		
-		color: #ffffff;
+		color: #0082ad;
 
 		-webkit-transition: all 0.5s linear;
 		-moz-transition: all 0.5s linear;
@@ -128,7 +129,7 @@ body { -webkit-animation: bugfix infinite 1s; }
 	}
 	
 	.toggle:hover:after {
-		background: #45abd6;
+		background: #ffaf32;
 	}
 	
 	#toggle:checked + .toggle:after {
